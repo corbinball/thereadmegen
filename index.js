@@ -45,7 +45,6 @@ const questions = [
             "GNU General Public License v3.0",
             "MIT License",
             "Mozilla Public License 2.0",
-            "The Unlicense",
         ]
     },
     {
@@ -61,12 +60,13 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+//function writeToFile(fileName, data)
+function writeToFile() {
     inquirer
         .prompt (questions)
         .then((answers) => {
             console.log(answers);
-            const message= generateMarkdown(input)
+            const message= generateMarkdown(answers)
             fs.writeFileSync('./readmecreate/readme.md',message, (err)=>err? console.log(err): console.log(generateReadme));
         })
         .catch (function () {
@@ -74,10 +74,10 @@ function writeToFile(fileName, data) {
         })
 };
 
-writeToFile();
+//writeToFile();
 
 // TODO: Create a function to initialize app
-function init() {writeToFile};
+function init() {writeToFile()};
 
 // Function call to initialize app
 init();
