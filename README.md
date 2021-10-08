@@ -21,7 +21,7 @@ This README generator can be used to create a quick README.md with a users crite
     
     :Video of generator in action:
 
-< src= "https://watch.screencastify.com/v/UNKSE0twemxu7ZgwflA1" />
+<iframe src="https://drive.google.com/file/d/1d7iVT0HP9sTWrvuHbDqXtWekJHep3vi7/preview" width="640" height="480"></iframe>
 
 
 ## Features
