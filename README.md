@@ -19,11 +19,9 @@ https://corbinball.github.io/thereadmegen/
 ## Usage
 This README generator can be used to create a quick README.md with a users criteria. 
     
-    :Video of generator in action:
+    :Link to Video of generator in action:
 
-<figure class="video_container">
-  <iframe src="https://drive.google.com/file/d/1d7iVT0HP9sTWrvuHbDqXtWekJHep3vi7/preview" width="640" height="480"></iframe>
-</figure>
+https://drive.google.com/file/d/1d7iVT0HP9sTWrvuHbDqXtWekJHep3vi7/preview
 
 
 ## Features
