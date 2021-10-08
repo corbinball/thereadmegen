@@ -64,7 +64,7 @@ const questions = () => {
 // TODO: Create a function to write README file
 //function writeToFile(fileName, data)
 function writeToFile(fileName, data) {
-    fs.writeFileSync('.\readmecreate\README.md', generateMarkdown(data))
+    fs.writeFileSync('/readmecreate/README.md', generateMarkdown(data))
 };
     
 //writeToFile();
@@ -72,8 +72,8 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
-        .then(() => { writeToFile})
-        .then(() => console.log('success'))
+        .then((data) => writeToFile(null, data))
+        //.then(() => console.log('success'))
         .catch((err) => console.error(err));
 };
 
