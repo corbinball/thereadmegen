@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  let licenseType = `${answers.licenseChoice}`;
+  let licenseType = `${data.licenseChoice}`;
   let theLicense = '';
   if(licenseType === 'MIT License') {
     theLicense = `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
@@ -27,8 +27,8 @@ function renderLicenseLink(license) {}
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(answers) {
-  return `# ${answers.projectTitle}
+function generateMarkdown(data) {
+  return `# ${data.projectTitle}
   <br>
   ## Table of Contents
   - [Description](#description)
@@ -40,23 +40,23 @@ function generateMarkdown(answers) {
   - [License](#license)
   <br>
   ## Description 
-  ${answers.description}
+  ${data.description}
   <br>
   ## Installation
-  ${answers.installation}
+  ${data.installation}
   <br>
   ## Usage
-  ${answers.usageInfo}
+  ${data.usageInfo}
   <br>
   ## Test-Instructions
-  ${answers.testInst}
+  ${data.testInst}
   <br>
   ## Questions
-  Github: ${answers.githubName}
-  E-mail: ${answers.yourEmail}
+  Github: ${data.githubName}
+  E-mail: ${data.yourEmail}
   <br>
   ## Contributors
-  ${answers.contributions}
+  ${data.contributions}
   <br>
   ## License
   ${renderLicenseBadge(license)}
