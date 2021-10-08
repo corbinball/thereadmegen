@@ -65,18 +65,17 @@ function writeToFile() {
     inquirer
     .prompt (questions)
     .then((data) => {
-        //const message= generateMarkdown(data)
-        //const fileName= './readmecreate/README.md'
-        //fs.writeFile('.\readmecreate\README.md', generateMarkdown, (err)=>
-                //err ? console.log(err) : console.log("approved")
-            //);
-    // })
-    // .catch (function () {
-    //     console.log("rejected")
-    // })
+        const message= generateMarkdown(data)
+        const fileName= './readmecreate/README.md'
+        fs.writeFile('.\readmecreate\README.md', generateMarkdown, (err)=>
+                err ? console.log(err) : console.log("approved")
+            );
+    })
+    .catch (function () {
+        console.log("rejected")
+    })
         console.log(data);
-    });
-};
+    };
 
 //writeToFile();
 
