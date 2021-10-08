@@ -64,7 +64,7 @@ const questions = [
 function writeToFile(fileName, data) {
     inquirer
         .prompt ([questions])
-        .then((answers) => 
+        .then(
         console.log(answers)
         );
 };
