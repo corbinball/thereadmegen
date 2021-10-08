@@ -63,15 +63,19 @@ const questions = [
 //function writeToFile(fileName, data)
 function writeToFile() {
     inquirer
-        .prompt (questions)
-        .then((answers) => {
-            console.log(answers);
-            const message= generateMarkdown(answers)
-            fs.writeFileSync('./readmecreate/readme.md',message, (err)=>err? console.log(err): console.log(generateReadme));
-        })
-        .catch (function () {
-            console.log("rejected")
-        })
+    .prompt (questions)
+    .then((data) => {
+        //const message= generateMarkdown(data)
+        //const fileName= './readmecreate/README.md'
+        //fs.writeFile('.\readmecreate\README.md', generateMarkdown, (err)=>
+                //err ? console.log(err) : console.log("approved")
+            //);
+    // })
+    // .catch (function () {
+    //     console.log("rejected")
+    // })
+        console.log(data);
+    });
 };
 
 //writeToFile();
