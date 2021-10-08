@@ -2,7 +2,7 @@
 //added packages
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+//const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -39,7 +39,7 @@ const questions = [
     {
         type: "list",
         name: "licenseChoice",
-        message: "Please choose the license for this project:",
+        message: "Please choose the license for this project useing the Up and Down arrow keys:",
         choices: [
             "Apache License 2.0",
             "GNU General Public License v3.0",
@@ -63,10 +63,10 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     inquirer
-        .prompt ([questions])
-        .then(
+        .prompt (questions)
+        .then((answers) => {
         console.log(answers)
-        );
+        });
 };
 
 writeToFile();
