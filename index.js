@@ -63,7 +63,7 @@ const questions = () => {
 
 // TODO: Create a function to write README file
 //function writeToFile(fileName, data)
-function writeToFile(fileName, data) {
+function writeToFile(data) {
     fs.writeFileSync('./readmecreate/README.md', generateMarkdown(data))
 };
 
@@ -72,7 +72,7 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
-        .then((data) => writeToFile(null, data))
+        .then((data) => writeToFile(data))
         //.then(() => console.log('success'))
         .catch((err) => console.error(err));
 };
